@@ -30,13 +30,11 @@ df = df.merge(
     right_on='id'
 )
 
-
 df = df.rename(
     columns={'name':'team_name', 'singular_name':'position_name'}
 )
 
 
-print(df.loc[df['first_name']=='Gabriel'])
  # show joined result
 # r = requests.get(base_url + 'element-summary/4/').json()
 # print(list(r.keys()))
